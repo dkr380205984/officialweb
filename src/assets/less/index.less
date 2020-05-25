@@ -1,0 +1,229 @@
+#index{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  font-family: 'PingFang SC';
+  .header{
+    height: 705px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    &.bgHome{
+       background-image: url('../image/协同织造背景图@2x.png');
+    }
+    &.bgUs{
+      background-image: url('../image/公司简介背景图@2x.png');
+    }
+    &.bgPro{
+      background-image: url('../image/产品概览背景图@2x.png');
+    }
+    .navCtn{
+      width: 1440px;
+      height: 56px;
+      padding: 13px 0;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      .leftCtn{
+        padding-left: 130px;
+        display: flex;
+        align-items: center;
+        .logo{
+          width: 48px;
+          height: 48px;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .name{
+          margin-left: 17px;
+          font-size:40px;
+          font-weight:500;
+          line-height:56px;
+          color:rgba(255,255,255,1);
+          letter-spacing:8px;
+        }
+      }
+      .rightCtn{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        .nav{
+          font-size:16px;
+          font-weight:400;
+          line-height:22px;
+          color:rgba(255,255,255,1);
+          margin: 0 40px;
+          position: relative;
+          cursor: pointer;
+          &.unactive{
+            &:hover{
+              color:#1a95ff;
+            }
+          }
+          &.active{
+            font-size: 18px;
+            &::after{
+              content: '';
+              position: absolute;
+              width: calc(100% + 4px);
+              height: 2px;
+              background: #ffffff;
+              bottom: -6px;
+              left: -2px;
+            }
+          }
+        }
+        .button{
+          line-height: 38px;
+          background: #1a95ff;
+          border-radius: 19px;
+          padding: 0 22px;
+        }
+      }
+    }
+    .otherInfo{
+      margin: 130px auto;
+      .container{
+        display: flex;
+        flex-direction: column;
+        .bigText{
+          font-size:82px;
+          font-weight:500;
+          color:rgba(255,255,255,1);
+          letter-spacing: 12px;
+          text-align: center;
+          &.font68{
+            font-size:68px;
+            font-weight:500;
+            line-height:95px;
+            text-shadow:0px 3px 6px rgba(0,0,0,0.16);
+          }
+        }
+        .contentText{
+          max-width: 1000px;
+          margin: auto;
+          font-size:18px;
+          font-weight:400;
+          color:rgba(255,255,255,1);
+          text-shadow:0px 1px 1px rgba(51,51,51,1);
+          text-align: center;
+          margin-top: 32px;
+          &.font24{
+            text-shadow:0px 1px 2px rgba(0,0,0,0.20);
+            font-size: 24px;
+            line-height:36px;
+            text-align: left;
+          }
+          &.font38{
+            font-size:38px;
+            font-weight:500;
+            line-height:95px;
+            text-shadow:0px 3px 6px rgba(0,0,0,0.16);
+          }
+        }
+        .flexCtn{
+          display: flex;
+          color: #ffffff;
+          width: 1000px;
+          margin: auto;
+          margin-top: 30px;
+          justify-content: space-between;
+          .once{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 185px;
+            img{
+              width: 105px;
+              height: 105px;
+              margin-bottom: 10px;
+            }
+            .text{
+              font-size:18px;
+              text-shadow:0px 1px 1px rgba(0,0,0,0.20);
+              span{
+                display: block;
+                margin: 5px 0;
+                text-align: center;
+              }
+            }
+          }
+        }
+        .buttonCtn{
+          display: flex;
+          align-items: center;
+          margin: auto;
+          margin-top: 118px;
+          .bt{
+            padding: 7px 26px;
+            font-size: 16px;
+            margin: 0 12px;
+            cursor: pointer;
+            &.bt1{
+              color: #ffffff;
+              background: #1a95ff;
+              border: 1px solid #1a95ff;
+            }
+            &.bt2{
+              color: #ffffff;
+              border:1px solid #ffffff;
+            }
+          }
+        }
+      }
+    } 
+  }
+  .bottomInfo{
+    height: 400px;
+    position: relative;
+    .canvas{
+      height: 400px;
+    }
+    .content{
+      position: absolute;
+      bottom: 0;
+      height: 250px;
+      width: 100%;
+      background:linear-gradient(180deg,rgba(116,177,255,1) 0%,rgba(24,66,204,0.8) 100%);
+      .middle{
+        width: 1000px;
+        margin: auto;
+      }
+      .leftCtn{
+        float: left;
+        margin-top: 30px;
+        color: #ffffff;
+        .title{
+          font-size:22px;
+        }
+        .line{
+          margin:20px 0;
+          span{
+            margin-left: 12px;
+          }
+        }
+      }
+      .rightCtn{
+        float: right;
+        margin-top: 30px;
+        display: flex;
+        color: #ffffff;
+        .once{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-left: 64px;
+          .title{
+            text-align: center;
+          }
+          img{
+            margin-top: 20px;
+            width:122px;
+            height:122px;
+          }
+        }
+      }
+    }
+  }
+}
