@@ -265,7 +265,8 @@
             <el-input class="inputs"
               v-model="email"
               placeholder="邮箱"></el-input>
-            <div class="btn">提交试用申请</div>
+            <div class="btn"
+              @click="$message.success('提交成功')">提交试用申请</div>
           </div>
           <div class="line"></div>
           <div class="rightCtn">
