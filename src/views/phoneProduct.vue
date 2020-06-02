@@ -1,7 +1,43 @@
 <template>
-  <div id="product"
-    class="main">
+  <div id="phoneProduct">
+    <div class="container">
+      <div class="bigText font65">织为云协同制造平台</div>
+      <div class="contentText font38">解决制造难题痛点</div>
+      <div class="flexCtn">
+        <div class="once">
+          <img :src="require('../assets/image/产品概览——icon-1@2x.png')" />
+          <div class="text">
+            <span>工厂数据不透明</span>
+            <span>部门间沟通效率低下</span>
+          </div>
+        </div>
+        <div class="once">
+          <img :src="require('../assets/image/产品概览——icon-2@2x.png')" />
+          <div class="text">
+            <span>物料使用情况不明确</span>
+            <span>物料积压浪费严重</span>
+          </div>
+        </div>
+        <div class="once">
+          <img :src="require('../assets/image/产品概览——icon-3@2x.png')" />
+          <div class="text">
+            <span>生产数据更新不及时</span>
+            <span>订单无法按时按质交期</span>
+          </div>
+        </div>
+        <div class="once">
+          <img :src="require('../assets/image/产品概览——icon-4@2x.png')" />
+          <div class="text">
+            <span>手写工单繁多难整理</span>
+            <span>订单数据无法追溯</span>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="module">
+      <div class="imgCtn">
+        <img :src="require('../assets/image/产品概览-报价单管理@2x.png')" />
+      </div>
       <div class="textCtn">
         <div class="title">报价单管理</div>
         <div class="line">
@@ -16,9 +52,6 @@
           <div class="circle"></div>
           <span class="text">报价审核即时通知，业务交付更快，上下游对接更方便</span>
         </div>
-      </div>
-      <div class="imgCtn">
-        <img :src="require('../assets/image/产品概览-报价单管理@2x.png')" />
       </div>
     </div>
     <div class="module bgGray">
@@ -42,6 +75,9 @@
       </div>
     </div>
     <div class="module">
+      <div class="imgCtn">
+        <img :src="require('../assets/image/产品概览-物料追溯@2x.png')" />
+      </div>
       <div class="textCtn">
         <div class="title">物料追溯</div>
         <div class="line">
@@ -56,9 +92,6 @@
           <div class="circle"></div>
           <span class="text">物料数据清晰可见，帮助企业往后订购物料中更明确，最大化物料使用效率，减少库存积压。</span>
         </div>
-      </div>
-      <div class="imgCtn">
-        <img :src="require('../assets/image/产品概览-物料追溯@2x.png')" />
       </div>
     </div>
     <div class="module bgGray">
@@ -82,6 +115,9 @@
       </div>
     </div>
     <div class="module">
+      <div class="imgCtn">
+        <img :src="require('../assets/image/产品概览——生产计划@2x.png')" />
+      </div>
       <div class="textCtn">
         <div class="title">生产计划</div>
         <div class="line">
@@ -96,9 +132,6 @@
           <div class="circle"></div>
           <span class="text">结合数字大屏，帮助工厂精准掌控每个订单生产进度</span>
         </div>
-      </div>
-      <div class="imgCtn">
-        <img :src="require('../assets/image/产品概览——生产计划@2x.png')" />
       </div>
     </div>
     <div class="module bgGray">
@@ -121,8 +154,10 @@
         </div>
       </div>
     </div>
-    <div class="module"
-      style="margin-bottom:100px">
+    <div class="module">
+      <div class="imgCtn">
+        <img :src="require('../assets/image/产品概览——财务统计@2x.png')" />
+      </div>
       <div class="textCtn">
         <div class="title">财务统计</div>
         <div class="line">
@@ -138,25 +173,16 @@
           <span class="text">统计所有合作公司财务往来，方便工厂年底进行财务结算。</span>
         </div>
       </div>
-      <div class="imgCtn">
-        <img :src="require('../assets/image/产品概览——财务统计@2x.png')" />
-      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  created () {
-    const flag = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
-    if (flag) {
-      this.$router.push('/index/phoneProduct')
-    }
-  }
+
 }
 </script>
 
 <style lang="less" scoped>
-@import "~@/assets/less/product.less";
-@import "~@/assets/less/animation.less";
+@import "~@/assets/less/phoneProduct.less";
 </style>

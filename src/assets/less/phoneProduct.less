@@ -1,0 +1,100 @@
+#phoneProduct{
+  .container{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../image/产品概览背景图@2x.png');
+    background-size: 100% 100%;
+    margin-bottom: 5em;
+    .bigText{
+      font-size:3.4rem;
+      font-weight:500;
+      color:rgba(255,255,255,1);
+      letter-spacing: 0.2rem;
+      text-align: center;
+      margin-top: 4.4rem;
+    }
+    .contentText{
+      max-width: 37rem;
+      margin: auto;
+      font-size:2.4rem;
+      font-weight:400;
+      color:rgba(255,255,255,1);
+      text-shadow:0px 1px 1px rgba(51,51,51,1);
+      text-align: center;
+      margin-top: 1.8rem;
+      margin-bottom: 1.3rem;
+    }
+    .flexCtn{
+      display: flex;
+      color: #ffffff;
+      width: 50rem;
+      margin: auto;
+      margin-top: 2rem;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .once{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25rem;
+        margin-bottom: 3rem;
+        img{
+          width: 5.5rem;
+          height: 5.5rem;
+          margin-bottom: 10px;
+        }
+        .text{
+          font-size:1.8rem;
+          text-shadow:0px 1px 1px rgba(0,0,0,0.20);
+          span{
+            display: block;
+            margin: 5px 0;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .module{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1.8rem auto;
+    justify-content: center;
+    align-items: center;
+    padding: 1.8rem 0;
+    &.bgGray{
+      background: #FBF8FD;
+    }
+    .imgCtn{
+      width: 40rem;
+      img{
+        width: 100%;
+      }
+    }
+    .textCtn{
+      width: 40rem;
+      .title{
+        font-size:2.4rem;
+        color: #333333;
+        font-weight: bold;
+      }
+      .line{
+        margin: 1.8rem 0;
+        display: flex;
+        align-items: center;
+        .circle{
+          min-width:1.2rem;
+          height:1.2rem;
+          background: #579BED;
+          border-radius:50%;
+        }
+        .text{
+          font-size: 1.8rem;
+          margin-left: 1.8rem;
+          color:rgba(88,88,88,1);
+        }
+      }
+    }
+  }
+}

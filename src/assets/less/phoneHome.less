@@ -1,0 +1,386 @@
+#phoneHome{
+  .container{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../image/协同织造背景图@2x.png');
+    background-size: 100% 100%;
+    margin-bottom: 5em;
+    .bigText{
+      font-size:4rem;
+      font-weight:500;
+      color:rgba(255,255,255,1);
+      letter-spacing: 1.2rem;
+      text-align: center;
+      margin-top: 6.4rem;
+    }
+    .contentText{
+      max-width: 37rem;
+      margin: auto;
+      font-size:2rem;
+      font-weight:400;
+      color:rgba(255,255,255,1);
+      text-shadow:0px 1px 1px rgba(51,51,51,1);
+      text-align: center;
+      margin-top: 1.8rem;
+      margin-bottom: 5.3rem;
+    }
+  }
+  .module1{
+    width: 50rem;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    .leftCtn{
+      // position: absolute;
+      margin-right: 1.2rem;
+      width: 24.4rem;
+      // top: 0;
+      // bottom: 0;
+      img{
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .rightCtn{
+      // display: block;
+      // margin-left: auto;
+      width: 24.4rem;
+      .top{
+        .line1{
+          display: block;
+          color:#333;
+          font-weight:600;
+          font-size: 2.4rem;
+        }
+        margin-bottom: 1.2rem;
+      }
+      .middle{
+        .content{
+          display: inline-block;
+          color: #333;
+          text-align: justify;
+          line-height: 1.9rem;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .module2{
+    width: 50rem;
+    margin: 1.8rem auto;
+    overflow: hidden;
+    .once{
+      width: 24.4rem;
+      height: 19.6rem;
+      float: left;
+      display: flex;
+      color: #ffffff;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding: 2.8rem 1.4rem;
+      .icon{
+        width: 3.9rem;
+        height: 4.3rem;
+        margin: auto;
+      }
+      .title{
+        text-align: center;
+        font-size: 1.6rem;
+        line-height:2.2rem;
+      }
+      .line{
+        height: 1px;
+        background: rgba(255,255,255,0.2);
+        margin: 0.6rem 0;
+      }
+      .text{
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: 2.4rem;
+      }
+      .big{
+        font-size:3.2rem;
+        margin: auto;
+      }
+      &.double{
+        height: 40.3rem;
+        width: 24.4rem;
+        .line1{
+          font-size:2.8rem;
+          font-weight:600;
+          line-height:4rem;
+        }
+        .line2{
+          font-size:1.8rem;
+          line-height:3rem;
+        }
+        .line3{
+          margin: 1.9rem 0;
+          width: 2px;
+          background: #ffffff;
+          height: 3.6rem;
+          display: block;
+        }
+        .line4{
+          font-size:1.8rem;
+          text-align: justify;
+        }
+      }
+      &.blue{
+        background: #5A8EF9;
+      }
+      &.green{
+        background: #1E9493;
+      }
+      &.gray{
+        background: #5D7091;
+      }
+    }
+  }
+  .module3{
+    background: url('../image/产品亮点背景图@2x.png') no-repeat;
+    background-size:100% 100%;
+    margin: 1.8rem 0;
+    .middle{
+      width: 50rem;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      color: #ffffff;
+      .top{
+        .line1{
+          text-align: center;
+          font-size: 3.4rem;
+          text-align: center;
+          letter-spacing: 2px;
+          margin-top: 1.8rem;
+        }
+        .line2{
+          text-align: center;
+          margin-bottom:1.8rem;
+          font-size: 2.4rem;
+          letter-spacing: 2px;
+        }
+      }
+      .center{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .once{
+          padding: 0 4rem;
+          display: flex;
+          align-items: center;
+          margin:1.2rem 0;
+          img{
+            width: 8rem;
+            height: 8rem;
+            margin-right: 2.7rem;
+          }
+          .text{
+            font-size:1.8rem;
+          }
+        }
+      }
+    }
+  }
+  .module4{
+    margin: 1.8rem 0;
+    .middle{
+      width: 50rem;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      color: #333333;
+      .top{
+        .line1{
+          text-align: center;
+          font-size: 3.4rem;
+          text-align: center;
+          letter-spacing: 2px;
+        }
+        .line2{
+          text-align: center;
+          margin:12px;
+          font-size: 2.4rem;
+          letter-spacing: 2px;
+        }
+      }
+      .center{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .once{
+          width: 24.4rem;
+          box-shadow:1px 1px 10px rgba(111,218,250,0.2);
+          height: 30.2rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img{
+            margin: 4rem;
+            width: 10rem;
+            height: 10rem;
+          }
+          .line1{
+            font-size: 1.8rem;
+          }
+          .line2{
+            font-weight:bold;
+            font-size: 3.2rem;
+            margin-top: 1.2rem;
+          }
+          .line{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 2rem;
+            text-align: left;
+            .number{
+              font-size:2.2rem;
+              font-weight:bold;
+              line-height:4rem;
+            }
+            .length{
+              height: 4px;
+              border-radius: 2px;
+              margin: 4px 0;
+              &.orange{
+                background: #FC9744;
+              }
+              &.green{
+                background: #5AD7A6;
+              }
+              &.blue{
+                background: #6DC7EC;
+              }
+            }
+            .text{
+              color: #2c2c2c;
+              font-size: 1.6rem;
+              line-height: 2.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .module5{
+    background: url('../image/服务流程背景图@2x.png') no-repeat;
+    background-size:100% 100%;
+    height: 36rem;
+    margin: 1.8rem 0;
+    .middle{
+      width: 50rem;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      color: #ffffff;
+      .top{
+        .line1{
+          text-align: center;
+          font-size: 3.4rem;
+          text-align: center;
+          letter-spacing: 2px;
+          margin-top: 3rem;
+        }
+      }
+      .center{
+        width:50rem;
+        height: 26.1rem;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        .line{
+          width: 100%;
+          height: 4px;
+          border-radius: 2px;
+          background: #ffffff;
+          position: absolute;
+          top:5rem;
+          bottom: 0;
+          margin: auto;
+        }
+        .once{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          position: relative;
+          img{
+            width:8.5rem;
+            height:8.5rem;
+          }
+          .rect{
+            position: absolute;
+            width:1.8rem;
+            height:1.8rem;
+            background:rgba(255,255,255,1);
+            transform: rotate(45deg);
+            border-radius:3px;
+            left: 2.8rem;
+            top: 14.5rem;
+          }
+          .text{
+            font-size: 1.6rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .module6{
+    .middle{
+      width: 50rem;
+      margin: auto;
+    }
+    .bigTitle{
+      height:13.7rem;
+      background:linear-gradient(66deg,rgba(65,99,197,1) 0%,rgba(88,159,240,1) 100%);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      .line1{
+        font-size:3.2rem;
+        line-height: 6rem;
+      }
+      .line2{
+        font-size:1.6rem;
+        line-height: 4rem;
+      }
+    }
+    .contentCtn{
+      position: relative;
+      .middle{
+        display: flex;
+        padding: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        .inputs{
+          width:42.5rem;
+          height:4.6rem;
+          box-sizing: border-box;
+          padding: 0.8rem 2rem;
+          margin: 2rem auto;
+          line-height: 3rem;
+        }
+        .btn{
+          width:42.5rem;
+          height:4.6rem;
+          background:rgba(32,120,251,1);
+          box-shadow:3px 3px 6px rgba(48,128,248,0.41);
+          opacity:1;
+          border-radius:2.3rem;
+          font-size:1.8rem;
+          color: #ffffff;
+          line-height: 4.8rem;
+          text-align: center;
+          cursor: pointer;
+          margin:2rem auto;
+        }
+      }
+    }
+  }
+}

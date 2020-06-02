@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import index from '../views/index.vue'
-
+import phoneIndex from '../views/phoneIndex.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -22,6 +22,23 @@ const routes = [
       path: '/index/product',
       name: '产品简介',
       component: () => import('../views/product.vue')
+    }]
+  }, {
+    path: '/index/phone',
+    name: '移动端首页',
+    component: phoneIndex,
+    children: [{
+      path: '/index/phone/phoneHome',
+      name: '移动端首页',
+      component: () => import('../views/phoneHome.vue')
+    }, {
+      path: '/index/phone/phoneAboutUs',
+      name: '关于我们',
+      component: () => import('../views/phoneAboutUs.vue')
+    }, {
+      path: '/index/phone/phoneProduct',
+      name: '产品简介',
+      component: () => import('../views/phoneProduct.vue')
     }]
   }
 ]

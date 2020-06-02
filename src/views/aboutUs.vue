@@ -24,6 +24,12 @@ export default {
     return {
       picArr: [require('../assets/image/证书1.jpg'), require('../assets/image/证书2.jpg'), require('../assets/image/证书3.jpg')]
     }
+  },
+  created () {
+    const flag = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
+    if (flag) {
+      this.$router.push('/index/phone/phoneAboutUs')
+    }
   }
 }
 </script>

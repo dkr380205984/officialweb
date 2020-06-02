@@ -1,0 +1,128 @@
+#phoneIndex{
+  width: 54rem;
+  height: 100%;
+ padding-top: 6rem;
+  .phoneHead{
+    max-height: 6rem;
+    overflow: hidden;
+    transition: 0.3s;
+    position: fixed;
+    width: 100%;
+    background: #ffffff;
+    z-index: 999;
+    top: 0;
+    box-shadow: 0px 1px 5px rgba(13,121,227,0.35);
+    &.show{
+      max-height: 16.8rem;
+    }
+    .showHead{
+      text-align: center;
+      height: 100%;
+      position: relative;
+      .iconCtn{
+        position: absolute;
+        left: 0;
+        top: 0;
+        line-height: 6rem;
+        font-size: 3.5rem;
+        color: #2078FB;
+        margin-left: 1.8rem;
+      }
+      .title{
+        display: inline-block;
+        line-height: 6rem;
+        margin-right: 2.5em;
+        .logo{
+          width:3.2rem;
+          height:3.2rem;
+          vertical-align: middle;
+          margin-right: 1.2rem;
+        }
+        span{
+          font-size:2.2rem;
+          font-weight:bold;
+          color:rgba(32,120,251,1);
+          letter-spacing:0.2rem;
+          vertical-align: middle;
+        }
+      }
+      .btn{
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #fff;
+        background:rgba(0,120,255,1);
+        box-shadow:1px 1px 3px rgba(13,121,227,0.35);
+        font-size:1.6rem;
+        line-height: 3.4rem;
+        border-radius: 1.7rem;
+        padding: 0 1.7rem;
+        margin: 1.3rem 1.8rem;
+      }
+    }
+    .hiddenHead{
+      .btn{
+        display: block;
+        font-size: 1.8rem;
+        color: #333333;
+        line-height: 3.6rem;
+        margin-left: 1.8rem;
+        margin-right: 1.8rem;
+      }
+    }
+  }
+  .bottomInfo{
+    height:509px;
+    position: relative;
+    .canvas{
+      height: 400px;
+    }
+    .content{
+      position: absolute;
+      bottom: 0;
+      height: 360px;
+      width: 100%;
+      background:linear-gradient(180deg,rgba(116,177,255,1) 0%,rgba(24,66,204,0.8) 100%);
+      .middle{
+        width: 50rem;
+        margin: auto;
+      }
+      .leftCtn{
+        margin-top: 30px;
+        color: #ffffff;
+        text-align: center;
+        .title{
+          font-size:2.4rem;
+        }
+        .line{
+          margin:20px 0;
+          font-size: 1.8rem;
+          span{
+            margin-left: 12px;
+          }
+        }
+      }
+      .rightCtn{
+        margin-top: 30px;
+        display: flex;
+        color: #ffffff;
+        align-items: center;
+        .once{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-left: 64px;
+          .title{
+            text-align: center;
+            font-size: 1.8rem;
+          }
+          img{
+            margin-top: 20px;
+            width:12.2rem;
+            height:12.2rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -6,8 +6,6 @@
 <script>
 export default {
   mounted () {
-    const flag = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
-    console.log(flag)
   }
 }
 </script>
@@ -17,7 +15,6 @@ body {
   margin: 0;
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  min-width: 1366px;
 }
 #app {
   height: 100%;
