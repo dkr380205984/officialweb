@@ -75,7 +75,7 @@
         <template v-if="$route.name==='关于我们'">
           <div class="container">
             <div class="bigText font68">公司简介</div>
-            <div class="contentText font24">织为云—协同织造云平台是一款为传统针纺企业提供数字化、智能化解决方案的工业互联网系统，隶属于杭州织慧科技有限公司（简称织慧科技），位于杭州桐庐县。目前公司致力于中小型企业数字化软件的研究与开发。公司以纺织工业业务为起点，运用工业互联网、云计算、小程序、大数据分析等技术为企业数字化、智能化管理提供一站式解决方案。公司以实现行业区域性的协同智能制造为目标，不断提升公司的研发水平和业务能力，深耕传统产业的数字化改造，以扩大公司在行业的品牌影响力。</div>
+            <div class="contentText font24">杭州织慧科技有限公司（简称织慧科技），位于杭州桐庐县。目前公司致力于中小型企业数字化软件的研究与开发。公司以纺织工业业务为起点，运用工业互联网、云计算、小程序、大数据分析等技术为企业数字化、智能化管理提供一站式解决方案。公司以实现行业区域性的协同智能制造为目标，不断提升公司的研发水平和业务能力，深耕传统产业的数字化改造，以扩大公司在行业的品牌影响力。公司拥有多项软件著作专利，在2020年被入选为杭州市第二批数字工程服务机构。旗下的织为云—协同织造云平台是一款为传统针纺企业提供数字化、智能化解决方案的SAAS系统。</div>
           </div>
         </template>
       </div>
@@ -99,7 +99,7 @@
             </div>
             <div class="line">
               <i class="el-icon-phone-outline"></i>
-              <span>0671-5546-8857</span>
+              <span>150-6871-5652</span>
             </div>
             <div class="line">
               <i class="el-icon-position"></i>
@@ -115,8 +115,8 @@
             </div>
             <div class="once">
               <div class="title">织慧科技</div>
-              <div class="title">官方微信小程序</div>
-              <img :src="require('../assets/image/二维码.png')" />
+              <div class="title">官方公众号</div>
+              <img :src="require('../assets/image/公众号.jpg')" />
             </div>
           </div>
         </div>

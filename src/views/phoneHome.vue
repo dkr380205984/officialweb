@@ -68,8 +68,7 @@
       </div>
       <div class="once gray"
         style="margin-left:1.2rem;margin-top:1.2rem">
-        <div class="big"
-          @click="$router.push('/index/product')">MORE
+        <div class="big">MORE
           <span class="el-icon-right"></span>
         </div>
       </div>
@@ -197,7 +196,7 @@
         </div>
       </div>
     </div>
-    <div class="module6">
+    <!-- <div class="module6">
       <div class="bigTitle">
         <div class="middle">
           <div class="line1">填写试用申请表</div>
@@ -222,7 +221,7 @@
             @click="$message.success('提交成功')">提交试用申请</div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

@@ -30,10 +30,12 @@
         </div>
       </div>
     </div>
-    <div class="phoneBody">
+    <div class="phoneBody"
+      @click="showNav=false">
       <router-view />
     </div>
-    <div class="bottomInfo">
+    <div class="bottomInfo"
+      @click="showNav=false">
       <div class="canvas">
         <canvas ref="canvas"
           width="100%"
@@ -49,11 +51,11 @@
             </div>
             <div class="line">
               <i class="el-icon-phone-outline"></i>
-              <span>0671-5546-8857</span>
+              <span>150-6871-5652</span>
             </div>
             <div class="line">
               <i class="el-icon-position"></i>
-              <span>杭州市桐庐县桐庐科技孵化园B座3楼</span>
+              <span>杭州市桐庐县桐庐科技孵化园B座</span>
             </div>
           </div>
           <div class="middleLine"></div>
@@ -65,8 +67,8 @@
             </div>
             <div class="once">
               <div class="title">织慧科技</div>
-              <div class="title">官方微信小程序</div>
-              <img :src="require('../assets/image/二维码.png')" />
+              <div class="title">官方公众号</div>
+              <img :src="require('../assets/image/公众号.jpg')" />
             </div>
           </div>
         </div>
