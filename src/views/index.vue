@@ -1,6 +1,7 @@
 <template>
   <div id="index">
-    <div class="header"
+    <div v-if="$route.name==='首页' ||$route.name==='关于我们'||$route.name==='产品简介'"
+      class="header"
       :class="{'bgHome':$route.name==='首页' , 'bgUs':$route.name==='关于我们', 'bgPro':$route.name==='产品简介'}">
       <div class="navCtn">
         <div class="leftCtn">
@@ -19,6 +20,9 @@
           <span class="nav"
             :class="{'active':$route.name==='关于我们','unactive':$route.name!=='关于我们'}"
             @click="$router.push('/index/aboutUs')">关于我们</span>
+          <span class="nav"
+            :class="{'active':$route.name==='homePage','unactive':$route.name!=='homePage'}"
+            @click="$router.push('/systemStore/homePage')">织慧商城</span>
           <span class="nav button"
             @click="$router.push('/index/product')">获取产品演示</span>
         </div>
@@ -83,7 +87,8 @@
     <div class="body">
       <router-view />
     </div>
-    <div class="bottomInfo">
+    <div class="bottomInfo"
+      v-if="$route.name==='首页' ||$route.name==='关于我们'||$route.name==='产品简介'">
       <div class="canvas">
         <canvas ref="canvas"
           width="100%"

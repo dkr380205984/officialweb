@@ -1,0 +1,176 @@
+@font-face {
+  font-family:'diyFont';
+  src: url('./优设标题黑.ttf');
+}
+@blue: #1A95FF;
+@orange: #E6A23C;
+@bg_body: #F0F2F5;
+@bg_item: #FFF;
+@bg_btn: #354D58;
+@borderColor: #EBF2F5;
+@fontColor: #19436A;
+#appStore{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  box-sizing: border-box;
+  background-color: @bg_body;
+  font-size: 18px;
+  .container{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    .client__info{
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+      width: 100%;
+      height: 335px;
+      background-color: @bg_item;
+      &:hover{
+        background-color: #EAF0FF;
+      }
+      .left{
+        width: 451px;
+        height: 229px;
+        margin-right: 48px;
+        .img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .right{
+        width: 488px;
+        height: 229px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .title{
+          font-size: 68px;
+          font-family: diyFont;
+          color: @fontColor;
+        }
+        .client__name{
+          color: #74838B;
+          letter-spacing: 19px;
+        }
+        .btn{
+          cursor: pointer;
+          color: #74838B;
+        }
+      }
+    }
+    &.flex2{
+      display: flex;
+      justify-content: space-between;
+      .flex__2__item{
+        width: 584px;
+        height: 188px;
+        padding: 30px 0;
+        box-sizing: border-box;
+        background-color: @bg_item;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        .item__info{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 40%;
+          .img{
+            // width: 100%;
+            // height: 100%;
+            width: 128px;
+            height: 128px;
+            margin: 0 auto;
+          }
+          .name{
+            color: @fontColor;
+            font-size: 30px;
+            font-family: diyFont;
+          }
+          .btn{
+            cursor: pointer;
+            color: #74838B;
+          }
+        }
+        &:hover{
+          background-color:  #EAF0FF;
+        }        
+      }      
+    }
+    &.flex4{
+      display: flex;
+      flex-wrap: wrap;
+      .flex__4__item{
+        position: relative;
+        width: 25%;
+        height: 396px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+        background-color: @bg_item;
+        border-right: 1px solid @borderColor;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+        &:nth-child(4n){
+          border-right: none;
+        }
+        &:nth-child(n+5){
+          border-top: 1px solid @borderColor;
+        }
+        &:hover{
+          box-shadow: 0px 0px 12px 0px @borderColor;
+          z-index: 2;
+          .go__detail__container>.btn{
+            top: 0;
+          }
+        }
+        .img{
+          width: 157px;
+          height: 157px;
+        }
+        .name{        
+          text-align: center;  
+          color: @fontColor;
+          font-size: 30px;
+          font-family: diyFont;
+        }
+        .go__detail__container{
+          position: absolute;
+          width: 100%;
+          height: 50px;
+          bottom: 0;
+          left: 0;
+          overflow: hidden;
+          .btn{
+            position: relative;
+            top: 50px;
+            width: 100%;
+            height: 50px;
+            background-color: @bg_btn;
+            color: #FFF;
+            text-align: center;
+            line-height: 50px;
+            transition: top 0.2s ease-in-out;
+            &.orange{
+              background-color: @orange;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bottom_info_title{
+    margin: 24px 0 22px 0;
+    font-family: diyFont;
+    font-size: 32px;
+    line-height: 42px;
+    color: @fontColor;
+  }
+}

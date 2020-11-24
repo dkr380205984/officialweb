@@ -22,6 +22,14 @@ const routes = [
       path: '/index/product',
       name: '产品简介',
       component: () => import('../views/product.vue')
+    }, {
+      path: '/systemStore/homePage',
+      name: 'homePage',
+      component: () => import('../views/appStore/index.vue')
+    }, {
+      path: '/systemStore/detail/:systemType',
+      name: 'detail',
+      component: () => import('../views/appStore/detail.vue')
     }]
   }, {
     path: '/index/phone',
